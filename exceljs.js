@@ -3,7 +3,7 @@ var _ = require('lodash');
 
 var workbook = new excel.Workbook();
 var sheet = workbook.addWorksheet('test');
-var filename = 'test.xlsx';
+var filename = 'exceljs.xlsx';
 
 // Hardcoded example data
 var data = [

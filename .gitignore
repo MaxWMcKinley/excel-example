@@ -1,4 +1,5 @@
+.DS_Store
 .idea/
 node_modules/
-test.xlsx
-~$test.xlsx
+exceljs.xlsx
+~$exceljs.xlsx
