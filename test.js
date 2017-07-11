@@ -39,19 +39,49 @@ sheet.columns = [
     {
         header: 'Product Id',
         key: 'pid',
-        width: '25'
+        width: '25',
+        style: {
+            alignment: {
+                vertical: 'middle',
+                horizontal: 'center'
+            }
+        }
     },
     {
         header: 'ModCode',
         key: 'mod',
-        width: '25'
+        width: '25',
+        style: {
+            alignment: {
+                vertical: 'middle',
+                horizontal: 'center'
+            }
+        }
     },
     {
         header: 'Pass/Fail',
         key: 'success',
-        width: '25'
+        width: '25',
+        style: {
+            alignment: {
+                vertical: 'middle',
+                horizontal: 'center'
+            }
+        }
     }
 ]
+
+// Access header row and change styling
+sheet.getRow(1).eachCell(function(cell) {
+    cell.font = {
+        bold: true
+    };
+});
+
+// Access and add styling to a specific cell
+sheet.getCell('C1').font = {
+    color: { argb: 'FFFF0000'}
+};
 
 // Add data programmatically
 _.forEach(data, function(data) {
