@@ -73,4 +73,6 @@ sheet.addRows(data);
 workbook.xlsx.writeFile(filename)
     .then(function() {
         console.log('Workbook created');
+        console.log('Number of columns: ' + sheet.actualColumnCount);
+        console.log('Number of rows: ' + sheet.actualRowCount);
     });
