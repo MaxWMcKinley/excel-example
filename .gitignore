@@ -3,3 +3,6 @@
 node_modules/
 exceljs.xlsx
 ~$exceljs.xlsx
+xlsx.xlsx
+~$xlsx.xlsx
+xlsx.html
