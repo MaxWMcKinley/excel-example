@@ -1,3 +1,5 @@
+// This script uses xlsx to create a workbook and populate it with data
+// It then saves to disk a spreadsheet in xlsx format and also an html file
 var xlsx = require('xlsx');
 var _ = require('lodash');
 

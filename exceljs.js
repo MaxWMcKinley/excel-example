@@ -1,3 +1,5 @@
+// This file uses exceljs to create a workbook, populate it with data and then do some styling
+// It saves the spreadsheet to disk in xlsx format
 var excel = require('exceljs');
 var _ = require('lodash');
 
